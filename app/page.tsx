@@ -43,6 +43,9 @@ export default function Home() {
 
       
 
+      <footer>
+        <div className='flex justify-center items-centerh-24'>Made with ❤️ by Relate Connect team</div>
+      </footer>
     </main>
   )
 }
