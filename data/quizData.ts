@@ -1,4 +1,15 @@
-export const quiz = {
+type Question = {
+    id: number,
+    question: string,
+    answers: string[]
+}
+
+type Quiz = { 
+    totalQuestions: number,
+    questions: Question[]
+}
+
+export const quiz:Quiz = {
     totalQuestions: 18,
     questions: [
         {
