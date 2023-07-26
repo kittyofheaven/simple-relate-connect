@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { tipsData } from '../../data/tipsData'
+import { tipsData } from '../../../data/tipsData'
 
 
 let categories:string = 'romanticizer'
