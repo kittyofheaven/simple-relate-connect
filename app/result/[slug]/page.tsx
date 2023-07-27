@@ -1,5 +1,6 @@
 import { tipsData } from '../../../data/tipsData'
 import { FC } from 'react'
+import Link from 'next/link'
 
 interface Props {
   params: {slug: string}
@@ -65,6 +66,10 @@ const Home: FC<Props> = ({params})  => {
 
 
           </div>
+      </div>
+
+      <div className='flex items-center justify-center'>
+          <Link href='/' className='mx-4 mt-10 border-black border-b-4 border-r-4 h-20 w-30 px-10  text-center bg-green-300 text-green-700 py-2 rounded-lg font-semibold hover:bg-green-500 focus:scale-95 transition-all duration-200 ease-out'>Back to Home</Link>
       </div>
 
     </main>
