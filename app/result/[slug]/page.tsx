@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { tipsData } from '../../../data/tipsData'
 
 
-let categories:string = 'romanticizer'
+let categories:string = 'maximizer'
 
 export default function Home() {
   return (
@@ -27,11 +27,11 @@ export default function Home() {
 
             {/* DESCRIPTION START */}
             <p className='text-lg mt-3'>
-              {categories ? tipsData['romanticizer'].description : 'Loading...'}
+              {categories ? tipsData[categories as keyof typeof tipsData].description : 'Loading...'}
             </p>
 
             <ol type='1'>
-              {categories ? tipsData['romanticizer'].tips.map((tip) => {
+              {categories ? tipsData[categories as keyof typeof tipsData].tips.map((tip) => {
                 return (
                   <li key={tip} className='text-lg mt-3'>● {tip}</li>  //! ini ada emot symbol ● barangkali klo lempar error ini kemungkinan bisa jadi penyebab
                 )
