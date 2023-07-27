@@ -1,10 +1,34 @@
-import Image from 'next/image'
 import { tipsData } from '../../../data/tipsData'
+import { FC } from 'react'
+
+interface Props {
+  params: {slug: string}
+}
 
 
-let categories:string = 'maximizer'
 
-export default function Home() {
+const Home: FC<Props> = ({params})  => {
+  
+
+  let approvedCategories = ['romanticizer', 'maximizer', 'hesitater']
+  let categories:string = params.slug
+  
+  if (!approvedCategories.includes(categories)) {
+    return (
+      <main>
+        <div className='text-center'>
+          <div className='text-5xl my-5 '>
+            <h5>404</h5>
+          </div>
+          <div className='my-4'>
+            <p>Page not found</p>
+          </div>
+        </div>
+      </main>
+    )
+  }
+  
+
   return (
     <main>
 
@@ -46,3 +70,5 @@ export default function Home() {
     </main>
   )
 }
+
+export default Home
