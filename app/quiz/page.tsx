@@ -4,7 +4,7 @@ import { quiz } from '../../data/quizData'
 
 import { useRouter } from 'next/navigation'
 
-export default function Page() {
+export default function Quiz() {
 
     const router = useRouter()
 
