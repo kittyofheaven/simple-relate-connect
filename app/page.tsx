@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main>
 
-      <div className=' flex min-h-screen min-w-full container items-center justify-between -mt-14'>
+      <div className=' flex min-h-screen min-w-full container items-center justify-between -mt-48'>
           {/* //GRID START */}
           <div className='w-fit grid grid-cols-4 gap-9 mx-24 '>
 
